@@ -58,8 +58,10 @@ export default function SubscriptionsDisplay(props) {
                   <h4>{startDate}</h4>
                 </div>
                 <div>
-                  <p>Due</p>
-                  <h4>{getDaysUntilNextCharge(startDate, billingFrequency)}</h4>
+                  <p>Due in</p>
+                  <h4>
+                    {getDaysUntilNextCharge(startDate, billingFrequency)} days
+                  </h4>
                 </div>
               </div>
 
